@@ -1,0 +1,455 @@
+@import 'nib'
+@import 'zurui'
+@import 'box-effect'
+
+// Color Scheme
+
+//black
+base-black=#030303
+//blue
+base-color=#6CBAD8
+base-color-dark=#007FB1
+//yellow
+sub-yellow=#FFF280
+sub-yellow-dark=#FFEA2A
+//light-greeen
+sub-light-green=#EBF182
+sub-light-green-dark=#DEE735
+//orange
+sub-orange=#EDA184
+sub-orange-dark=#E06A3B
+//green
+sub-green=#68CFC3
+sub-green-dark=#1DAF9E
+//gray
+zurui-gray=#f8f8f8
+
+
+/* 
+Theme Name: haya14busa 
+Version: 1.0
+Author: haya14busa
+Author URI: http://haya14busa.com
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Josefin\+Sans:300italic,400)
+@import 'ori-style.css'
+@import 'font/fontello.css'
+
+
+// Font size using rem
+// font-size :6pt、7pt、8pt、9pt、10pt、11pt、12pt、14pt、18pt、21pt、24pt、36pt、48pt、60pt、72pt
+html
+    font-size:62.5%
+
+
+body
+    background-color:zurui-gray
+    font-family: 'Hiragino Kaku Gothic ProN',Helvetica, meiryo, 'MS PGothic', sans-serif;
+    //font-family: 'Josefin Sans', Arial, Helvetica, sans-serif
+    font-size: 14px
+    font-size: 1.4rem
+    line-height:1.5
+    color:base-black
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a
+    font-style:italic
+    font-weight:300px
+    
+
+#wrapper
+    background-color:zurui-gray
+    border:none
+    //padding:0 80px
+    padding:0 100px
+
+
+
+
+
+/* =Links */
+a
+	color: base-color
+	font-weight: 400
+	text-decoration: none
+
+
+a
+    &:hover,
+    &:active,
+    &:focus
+	    color: base-color-dark
+	    outline: 0
+	    text-decoration: none
+    &:hover
+        zurui-line-bottom()
+
+
+::selection 
+	background: #999
+	color: #fff
+	text-shadow: none
+
+/* =ul & ol */
+ul, ol
+    margin:5px 0px
+    margin:0.5rem 0
+
+
+/* Header */
+
+div#logo
+    margin:70px 0px
+    .site-name
+        a
+          font-family: 'Josefin Sans', sans-serif
+          font-style:italic
+          font-weight:300
+          font-size:36px
+          font-size:3.6rem
+          color:base-black
+          text-decoration:none
+          &:hover,
+          &:active,
+          &:visited,
+          &:focus
+            color:base-black
+            text-decoration:none
+            border:none
+    .site-description
+        display:none
+
+
+.menu
+    margin:10px 0px
+    zurui-line-top-light()
+    zurui-line-bottom-light()
+    a
+        font-family: 'Josefin Sans', sans-serif
+        font-style:italic
+        font-weight:300
+        text-decoration:none
+        color:#000
+        font-size:24px
+        font-size:2.4rem
+        line-height:2.0
+
+.post-meta,
+.post-data,
+.icon-up-open,
+.copyright
+    font-family: 'Josefin Sans', sans-serif
+
+
+.widget-title,
+.widget-title-home
+    h3
+        font-size:24px
+        font-size:2.4rem
+        font-family: 'Josefin Sans', sans-serif
+        line-height:1.3
+        
+
+/* blockquote */
+blockquote
+    background: #fefefe
+    border: none
+    overflow: hidden
+    padding: 5px 12px 3px 12px
+    position:relative
+    float-box()
+    p
+        font-family: 'Georgia', 'Times New Roman', Times, serif
+        font-style: italic
+        font-size: 18px
+        font-size: 1.8rem
+        line-height: 1.5
+        margin:5px 0px 0px 0px
+        position:relative
+        z-index:2
+        &:last-child
+            text-align:right
+    &:before 
+        content: open-quote
+        font-size: 72px
+        font-size: 7.2rem
+        font-family:'fontello'
+        //line-height: 42px
+        color: #CBE7F3
+        opacity:0.4
+        //float: left
+        position: absolute
+        top: 0px
+        left: 10px
+        z-index:1
+        display: block
+        height: 75px
+        width: 75px
+        line-height:75px
+        quotes: '\275d' '\275e'
+    &:after 
+        content: close-quote
+        font-size: 72px
+        font-size: 7.2rem
+        font-family:'fontello'
+        //line-height: 42px
+        color: #CBE6F3
+        opacity:0.4
+        //float: right
+        position: absolute
+        bottom: 20px
+        right: 0px
+        display: block
+        height: 75px
+        width: 75px
+        quotes: '\275d' '\275e'
+
+.box-effect
+  width:90%
+  height:200px
+  margin:40px auto
+  background-color:#eee
+  box-effect4()
+
+/* breadcrumbs */
+.breadcrumb-list
+    font-family: 'Josefin Sans', sans-serif
+    font-style:italic
+    font-weight:300
+    padding:0px 10px
+    margin:1px 0px 40px 0px
+    //zurui-line-bottom()
+
+/* contents */
+.single,
+.page
+    #logo
+        margin:10px 0px 20px 0px
+    .menu
+        //margin:15px 0px
+        display:none
+
+#content
+    .breadcrumb-list
+        margin-bottom:72px
+    h1.entry-title
+        font-size:24px
+        font-size:2.4rem
+        line-height:1.8
+        text-align:center
+        margin-bottom:100px
+        a
+            color:base-color-dark
+            border-bottom:dashed 1px base-color-dark
+    h2
+        font-size:21px
+        font-size:2.1rem
+        margin-bottom:12px
+        margin-bottom:1.2rem
+    h3
+        font-size:18px
+        font-size:1.8rem
+        margin-bottom:10px
+        margin-bottom:1.0rem
+    
+    
+    .post-meta
+        text-align:center
+        margin-bottom:5px
+        font-size:24px
+        font-size:2.4rem
+        font-weight:200
+        font-style:italic
+        letter-spacing:6px
+        letter-spacing:0.6rem
+        a
+            color:#9f9f9f
+    
+    .post-entry
+        h2
+            line-height:1.3
+            padding-left:8px
+            border-left:solid 5px base-color
+            border-bottom:dashed 2px #eee
+        h3
+            border-left:solid 4px sub-light-green
+            padding-left:4px
+
+/* respond */
+#comments
+    margin-top:50px
+    margin-top:5.0rem
+#respond 
+    zurui-gradient-top-lighten(#f9f9f9,10%)
+	border-radius: 4px
+	clear: both
+	margin-top: 15px
+	padding: 10px 20px 50px
+
+
+/* Home */
+.home
+    #wrapper
+        padding:0px
+
+
+/* Archieve */
+.archive
+    #wrapper
+        padding:0px
+
+
+/* Pinterest */
+#pinterest-wrap
+    .entry-title
+        font-size:21px
+        font-size:2.1rem
+        line-height:1.5
+        text-align:left
+        margin:0px
+        margin-bottom:10px
+        padding-bottom:10px
+        //border-bottom:solid 1px #ccc
+        zurui-line-bottom-light()
+        a
+            color:base-color-dark
+            border-bottom:dashed 1px base-color-dark
+    .post-entry
+        word-wrap:break-word
+    .post-meta
+        //color:sub-orange-dark
+        text-align:center
+        font-size:18px
+        font-size:1.8rem
+        font-style:italic
+        margin:0px
+        padding:0px
+        //position:absolute
+        //top:-14px
+        //top:-1.4rem
+        a
+            color:sub-green
+    .post-data
+        margin-top:10px
+        text-align:right
+    .navigation
+        clear:both
+    .grid
+        width:24%
+        margin-right:1%
+        background-color: #fefefe
+        float-box()
+        .post
+            margin:10px
+        &:nth-child(5n+1)
+            width:49%
+
+// Hide author
+.byline,
+.author
+    display:none
+
+
+/* Footer */
+
+#footer
+    width:100%
+    margin:0px auto
+    zurui-gradient-top-lighten(base-color,10%)
+    #footer-wrapper
+        max-width:960px
+        margin:0px auto
+
+#footer a 
+    color:base-color
+    font-weight:400
+    &:hover 
+        color:base-color-dark
+
+
+.footer-line-wrapper
+    width:100%
+    height:20px
+    background-color:#CAE7F2
+    .footer-line
+        max-width: 960px
+        margin:0px auto
+
+/* =icon */
+#footer
+    .scroll-top
+        padding:10px 0px
+        a
+            font-size:16px
+            font-size:1.6rem
+            line-height:1.5
+            display:block
+            color:zurui-gray
+            border:none
+            text-decoration:none
+            &:hover,
+            &:visited,
+            &:active,
+            &:focus
+              color:zurui-gray
+              border:none
+              box-shadow:none
+              text-decoration:none
+            &:before
+              font-size:16px
+              font-size:2.1rem
+
+/* =Calendar */
+.widget_calendar
+    font-size:12px
+    font-size:1.2rem
+
+//
+@media screen and (max-width: 980px) 
+    #wrapper
+        padding:0px 10px
+    #footer-wrapper
+        padding:0px 10px
+@media screen and (max-width: 720px) 
+    #wrapper
+        padding:0px 10px
+//
+@media screen and (max-width: 650px) 
+    #pinterest-wrap
+        .grid
+            width:95%
+            border:none
+            zurui-line-bottom-light()
+            &:nth-child(5n+1)
+                width:95% !important
+            &:first-child
+                zurui-line-top-light()
+//    
+@media screen and (max-width: 480px) 
+    #content
+        .breadcrumb-list
+            margin-bottom:20px
+        h1.entry-title
+            margin-bottom:20px
+    #container
+        padding:3px
+    #wrapper
+        padding:0px 5px
+
+@media screen and (max-width: 320px) 
+    #menu
+        display:none
+    
+//@media screen and (max-width: 240px) 
+//    

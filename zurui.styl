@@ -1,0 +1,42 @@
+@import 'nib'
+
+zurui-line-top(op1=0.2, op2=0.3)
+    border-top 1px solid rgba(0, 0, 0, op1)
+    box-shadow rgba(255, 255, 255, op2) 0 1px 0 inset
+
+zurui-line-left(op1=0.2, op2=0.3)
+    border-left 1px solid rgba(0, 0, 0, op1)
+    box-shadow rgba(255, 255, 255, op2) -1px 0 0
+
+zurui-line-right(op1=0.2, op2=0.3)
+    border-right 1px solid rgba(0, 0, 0, op1)
+    box-shadow rgba(255, 255, 255, op2) -1px 0 0 inset
+
+zurui-line-bottom(op1=0.2, op2=0.3)
+    border-bottom 1px solid rgba(0, 0, 0, op1)
+    box-shadow rgba(255, 255, 255, op2) 0 1px 0
+
+// zuzrui-ts-000(op=0.4)
+//   text-shadow 1px -1px rgba(0, 0, 0, op)
+
+// zuzrui-ts-fff(op=0.7)
+//   text-shadow -1px 1px rgba(0, 0, 0, op)
+
+zurui-gradient-top-lighten(color=#666, amount=10%)
+    background: linear-gradient(top, lighten(color, amount), color);
+
+zurui-gradient-top-darken(color=#666, amount=10%)
+    background: linear-gradient(top, darken(color, amount), color);
+
+
+zurui-line-top-light()
+    border-top: 1px solid rgba(0, 0, 0, .1)
+    box-shadow(rgba(255, 255, 255, 1) 0 1px 0 inset)
+
+zurui-line-bottom-light()
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
+    box-shadow(rgba(255, 255, 255, 1)0 1px 0)
+
+
+
+
