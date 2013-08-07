@@ -1,5 +1,5 @@
-/* 
-Theme Name: haya14busa 
+/*
+Theme Name: haya14busa
 Version: 1.0
 Author: haya14busa
 Author URI: http://haya14busa.com
@@ -151,8 +151,8 @@ blockquote:before {
   font-family: 'fontello';
   color: #cbe7f3;
   opacity: 0.4;
-  filter: alpha(opacity=40);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
   position: absolute;
   top: 0px;
   left: 10px;
@@ -170,8 +170,8 @@ blockquote:after {
   font-family: 'fontello';
   color: #cbe6f3;
   opacity: 0.4;
-  filter: alpha(opacity=40);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
   position: absolute;
   bottom: 20px;
   right: 0px;
@@ -279,11 +279,11 @@ blockquote:after {
 }
 #respond {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), color-stop(1, #f9f9f9));
-  background: -webkit-linear-gradient(top, #fafafa 0%, #f9f9f9 100%);
-  background: -moz-linear-gradient(top, #fafafa 0%, #f9f9f9 100%);
-  background: -o-linear-gradient(top, #fafafa 0%, #f9f9f9 100%);
-  background: -ms-linear-gradient(top, #fafafa 0%, #f9f9f9 100%);
-  background: linear-gradient(top, #fafafa 0%, #f9f9f9 100%);
+  background: -webkit-linear-gradient(top, #fafafa 0, #f9f9f9 100%);
+  background: -moz-linear-gradient(top, #fafafa 0, #f9f9f9 100%);
+  background: -o-linear-gradient(top, #fafafa 0, #f9f9f9 100%);
+  background: -ms-linear-gradient(top, #fafafa 0, #f9f9f9 100%);
+  background: linear-gradient(top, #fafafa 0, #f9f9f9 100%);
 }
 border-radius: 4px {
   clear: both;
@@ -356,18 +356,22 @@ border-radius: 4px {
   width: 100%;
   margin: 0px auto;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #7bc1dc), color-stop(1, #6cbad8));
-  background: -webkit-linear-gradient(top, #7bc1dc 0%, #6cbad8 100%);
-  background: -moz-linear-gradient(top, #7bc1dc 0%, #6cbad8 100%);
-  background: -o-linear-gradient(top, #7bc1dc 0%, #6cbad8 100%);
-  background: -ms-linear-gradient(top, #7bc1dc 0%, #6cbad8 100%);
-  background: linear-gradient(top, #7bc1dc 0%, #6cbad8 100%);
+  background: -webkit-linear-gradient(top, #7bc1dc 0, #6cbad8 100%);
+  background: -moz-linear-gradient(top, #7bc1dc 0, #6cbad8 100%);
+  background: -o-linear-gradient(top, #7bc1dc 0, #6cbad8 100%);
+  background: -ms-linear-gradient(top, #7bc1dc 0, #6cbad8 100%);
+  background: linear-gradient(top, #7bc1dc 0, #6cbad8 100%);
 }
 #footer #footer-wrapper {
   max-width: 960px;
   margin: 0px auto;
 }
+#footer li {
+  margin-top: 5px;
+  margin-top: 0.5rem;
+}
 #footer a {
-  color: #6cbad8;
+  color: #6c9fd8;
   font-weight: 400;
 }
 #footer a:hover {
