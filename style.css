@@ -420,6 +420,10 @@ border-radius: 4px {
   font-size: 12px;
   font-size: 1.2rem;
 }
+/* =For Pretty Print */
+.tag {
+  color: #030303 !important;
+}
 @media screen and (max-width: 980px) {
   #wrapper {
     padding: 0px 10px;
