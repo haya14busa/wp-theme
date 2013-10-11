@@ -53,9 +53,9 @@ body
     background-color:zurui-gray
     font-family: 'Hiragino Kaku Gothic ProN',Helvetica, meiryo, 'MS PGothic', sans-serif;
     //font-family: 'Josefin Sans', Arial, Helvetica, sans-serif
-    font-size: 14px
-    font-size: 1.4rem
-    line-height:1.5
+    font-size: 16px
+    font-size: 1.6rem
+    line-height:1.8
     color:base-black
 
 h1,
@@ -86,26 +86,26 @@ h6 a
 
 /* =Links */
 a
-	color: base-color
-	font-weight: 400
-	text-decoration: none
+    color: base-color
+    font-weight: 400
+    text-decoration: none
 
 
 a
     &:hover,
     &:active,
     &:focus
-	    color: base-color-dark
-	    outline: 0
-	    text-decoration: none
+        color: base-color-dark
+        outline: 0
+        text-decoration: none
     &:hover
         zurui-line-bottom()
 
 
 ::selection
-	background: #999
-	color: #fff
-	text-shadow: none
+    background: #999
+    color: #fff
+    text-shadow: none
 
 /* =ul & ol */
 ul, ol
@@ -171,8 +171,11 @@ blockquote
     background: #fefefe
     border: none
     overflow: hidden
-    padding: 5px 12px 3px 12px
+    //padding: 5px 12px 3px 12px
+    padding: 25px 12px 25px 25px
     position:relative
+    border-radius: 5px
+    box-shadow: 0 0 2px rgba(0, 0, 0, .15)
     float-box()
     p
         font-family: 'Georgia', 'Times New Roman', Times, serif
@@ -296,10 +299,10 @@ blockquote
     margin-top:5.0rem
 #respond
     zurui-gradient-top-lighten(#f9f9f9,10%)
-	border-radius: 4px
-	clear: both
-	margin-top: 15px
-	padding: 10px 20px 50px
+    border-radius: 4px
+    clear: both
+    margin-top: 15px
+    padding: 10px 20px 50px
 
 
 /* Home */
